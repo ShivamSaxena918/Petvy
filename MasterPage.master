@@ -1,0 +1,340 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="xmlrpc.php">
+    <script type="text/javascript">document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="icon" type="image/png" sizes="16x16" href="LOGO/apple-icon-152x152.png" />
+    <link rel="dns-prefetch" href="http://fonts.googleapis.com/" />
+    <link rel="dns-prefetch" href="http://fonts.gstatic.com/" />
+    <link rel="dns-prefetch" href="http://0.gravatar.com/" />
+    <link rel="dns-prefetch" href="http://2.gravatar.com/" />
+    <link rel="dns-prefetch" href="http://1.gravatar.com/" />
+    <title>Petvy &#8211; Snap to Scroll</title>
+    <style>
+        .wishlist_table .add_to_cart, a.add_to_wishlist.button.alt {
+            border-radius: 16px;
+            -moz-border-radius: 16px;
+            -webkit-border-radius: 16px;
+        }
+    </style>
+    <link rel='dns-prefetch' href='http://use.typekit.net/' />
+    <link rel='dns-prefetch' href='http://maxcdn.bootstrapcdn.com/' />
+    <link rel='dns-prefetch' href='http://s.w.org/' />
+    <link rel="alternate" type="application/rss+xml" title="Petvy - Snap to Scroll &raquo; Feed" href="feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Petvy - Snap to Scroll &raquo; Comments Feed" href="comments/feed/index.html" />
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/newnorth.fuelthemes.net\/north-snap\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.4" } };
+        !function (a, b, c) { function d(a, b) { var c = String.fromCharCode; l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0); var d = k.toDataURL(); l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0); var e = k.toDataURL(); return d === e } function e(a) { var b; if (!l || !l.fillText) return !1; switch (l.textBaseline = "top", l.font = "600 32px Arial", a) { case "flag": return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b); case "emoji": return b = d([55357, 56692, 8205, 9792, 65039], [55357, 56692, 8203, 9792, 65039]), !b } return !1 } function f(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d"); for (j = Array("flag", "emoji"), c.supports = { everything: !0, everythingExceptFlag: !0 }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (h = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' href='wp-content/plugins/revslider/public/assets/css/settings8ab9.css?ver=5.4.5.2' type='text/css' media='all' />
+    <style id='rs-plugin-settings-inline-css' type='text/css'>
+        #rs-demo-id {
+        }
+    </style>
+    <link rel='stylesheet' href='wp-content/plugins/woocommerce/assets/css/prettyPhotoc169.css?ver=3.2.6' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox7359.css?ver=1.2.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/yith-woocommerce-wishlist/assets/css/style3601.css?ver=2.2.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/plugins/yith-woocommerce-wishlist/assets/css/font-awesome.min1849.css?ver=4.7.0' type='text/css' media='all' />
+    <link rel='stylesheet' href='../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='wp-content/themes/north-wp/assets/css/appa871.css?ver=4.0.8' type='text/css' media='all' />
+    <style id='thb-app-inline-css' type='text/css'>
+        .header .logolink .logoimg {
+            max-height: 18px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: sofia-pro;
+        }
+
+        body, p {
+            font-family: sofia-pro;
+        }
+
+        .thb-full-menu {
+        }
+
+        .account-holder {
+        }
+    </style>
+    <link rel='stylesheet' href='wp-content/plugins/js_composer/assets/css/js_composer.min7752.css?ver=5.2.1' type='text/css' media='all' />
+    <script type='text/javascript' src='wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min8ab9.js?ver=5.4.5.2'></script>
+    <script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min8ab9.js?ver=5.4.5.2'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = { "ajax_url": "\/north-snap\/wp-admin\/admin-ajax.php", "wc_ajax_url": "http:\/\/newnorth.fuelthemes.net\/north-snap\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "http:\/\/newnorth.fuelthemes.net\/north-snap\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minc169.js?ver=3.2.6'></script>
+    <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart7752.js?ver=5.2.1'></script>
+    <script type='text/javascript' src='use.typekit.net/lcr7meh.js'></script>
+    <script type='text/javascript'>
+        try { Typekit.load({ async: true }); } catch (e) { }
+    </script>
+    <link rel='https://api.w.org/' href='wp-json/index.html' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+    <link rel="canonical" href="index.html" />
+    <link rel='shortlink' href='index.html' />
+    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embedd607.json?url=http%3A%2F%2Fnewnorth.fuelthemes.net%2Fnorth-snap%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embeddce5?url=http%3A%2F%2Fnewnorth.fuelthemes.net%2Fnorth-snap%2F&amp;format=xml" />
+    <noscript>
+    <style>
+        .woocommerce-product-gallery {
+            opacity: 1 !important;
+        }
+    </style></noscript>
+    <meta name="generator" content="Powered by Slider Revolution 5.4.5.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+    <script type="text/javascript">
+        function setREVStartSize(e) {
+            try {
+                var i = jQuery(window).width(), t = 9999, r = 0, n = 0, l = 0, f = 0, s = 0, h = 0;
+                if (e.responsiveLevels && (jQuery.each(e.responsiveLevels, function (e, f) { f > i && (t = r = f, l = e), i > f && f > r && (r = f, n = e) }), t > r && (l = n)), f = e.gridheight[l] || e.gridheight[0] || e.gridheight, s = e.gridwidth[l] || e.gridwidth[0] || e.gridwidth, h = i / s, h = h > 1 ? 1 : h, f = Math.round(h * f), "fullscreen" == e.sliderLayout) { var u = (e.c.width(), jQuery(window).height()); if (void 0 != e.fullScreenOffsetContainer) { var c = e.fullScreenOffsetContainer.split(","); if (c) jQuery.each(c, function (e, i) { u = jQuery(i).length > 0 ? u - jQuery(i).outerHeight(!0) : u }), e.fullScreenOffset.split("%").length > 1 && void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 ? u -= jQuery(window).height() * parseInt(e.fullScreenOffset, 0) / 100 : void 0 != e.fullScreenOffset && e.fullScreenOffset.length > 0 && (u -= parseInt(e.fullScreenOffset, 0)) } f = u } else void 0 != e.minHeight && f < e.minHeight && (f = e.minHeight); e.c.closest(".rev_slider_wrapper").css({ height: f })
+            } catch (d) { console.log("Failure at Presize of Slider:" + d) }
+        };</script>
+    <style type="text/css" data-type="vc_shortcodes-custom-css">
+        .vc_custom_1506160468201 {
+            background: #0a0a0a url(wp-content/uploads/sites/4/2017/09/beach-gang-lovely-pretty-3019877-1920x1080.jpg?id=329) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .vc_custom_1506160210036 {
+            background: #0a0a0a url(wp-content/uploads/sites/4/2017/09/b.jpg?id=328) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .vc_custom_1505898659845 {
+            background-color: #ffffff !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .vc_custom_1505895896149 {
+            background: #ffffff url(wp-content/uploads/sites/4/2017/09/IMG_256276.jpg?id=311) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+
+        .vc_custom_1505895888717 {
+            background: #0a0a0a url(wp-content/uploads/sites/4/2017/09/4b9bb43a298e2ca8a09acdb8fd3769f9.jpg?id=312) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+        }
+    </style>
+    <noscript>
+    <style type="text/css">
+        .wpb_animate_when_almost_visible {
+            opacity: 1;
+        }
+    </style>
+
+    </noscript>
+</head>
+<body class="home page-template page-template-template-snap page-template-template-snap-php page page-id-308 thb-arrows global_notification_off light-title wpb-js-composer js-comp-ver-5.2.1 vc_responsive">
+    <form id="form1" runat="server">
+        <div id="wrapper" class="open">
+            <!-- Start Mobile Menu -->
+            <nav id="mobile-menu" class="side-panel">
+                <header>
+                    <h6>Menu</h6>
+                    <a href="#" class="thb-close" title="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="12" height="12" viewBox="1.1 1.1 12 12" enable-background="new 1.1 1.1 12 12" xml:space="preserve">
+                            <path d="M8.3 7.1l4.6-4.6c0.3-0.3 0.3-0.8 0-1.2 -0.3-0.3-0.8-0.3-1.2 0L7.1 5.9 2.5 1.3c-0.3-0.3-0.8-0.3-1.2 0 -0.3 0.3-0.3 0.8 0 1.2L5.9 7.1l-4.6 4.6c-0.3 0.3-0.3 0.8 0 1.2s0.8 0.3 1.2 0L7.1 8.3l4.6 4.6c0.3 0.3 0.8 0.3 1.2 0 0.3-0.3 0.3-0.8 0-1.2L8.3 7.1z" />
+                        </svg></a>
+                </header>
+                <div class="side-panel-content custom_scroll">
+
+                    <ul id="menu-navigation" class="mobile-menu">
+                        <li id="menu-item-320" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-308 current_page_item menu-item-320"><a href="Default.aspx">Home</a></li>
+                        <li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a href="Insta.aspx">Post</a></li>
+                        <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12">
+                            <a href="Product.aspx"><span></span>Shop</a>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                    </div>
+                </div>
+            </nav>
+            <!-- End Mobile Menu -->
+            <!-- Start Side Cart -->
+
+            <!-- End Side Cart -->
+            <!-- Start Shop Filters -->
+            <!-- End Shop Filters -->
+            <!-- Start Content Click Capture -->
+            <div class="click-capture"></div>
+            <!-- End Content Click Capture -->
+            <!-- Start Global Notification -->
+            <!-- End Global Notification -->
+            <!-- Start Header -->
+            <header class="header style1">
+                <div class="row align-center full-width-row">
+                    <div class="small-6 columns hide-for-large toggle-holder">
+                        <a href="#" class="mobile-toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <div class="large-6 columns show-for-large">
+                        <div class="menu-holder">
+                            <nav id="nav">
+                                <ul id="menu-navigation-1" class="thb-full-menu">
+                                    <li id="menu-item-320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-320"><a href="Default.aspx">Home</a></li>
+                                    <li id="menu-item-331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-331"><a href="Insta.aspx">Post</a></li>
+                                    <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 menu-item-mega-parent "><a href="Product.aspx">Shop</a></li>
+                                    <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 menu-item-mega-parent ">
+                                        <asp:LinkButton ID="lbadd" runat="server" PostBackUrl="~/AddProducts.aspx">Add Products</asp:LinkButton>
+
+                                    </li>
+                                    <%--<li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-237"><a href="#">Pages</a>--%>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="logo-holder">
+                        <a href="#" class="logolink">
+                            <img src="LOGO/light3.png" class="logoimg bg--dark" alt="Petvy &#8211; Snap to Scroll" style="height: 200px; width: 200px; max-height: 80%; height: 80%; max-width: 70%; margin-top: 20px; margin-left: 40px" />
+                            <img src="LOGO/dark5.png" class="logoimg bg--light" alt="Petvy &#8211; Snap to Scroll" style="height: 200px; width: 200px; max-height: 1%; max-width: 70%; margin-top: 40px; margin-left: 40px" />
+                            <%--<img src="LOGO/dark.png" class="logoimg bg--light" alt="Petvy &#8211; Snap to Scroll" style="/*height:200px;width:200px;max-height:45%;max-width:45%;margin-top:30px;margin-left:40px*/" />--%>
+                        </a>
+                    </div>
+                    <div class="small-6 columns account-holder">
+                        <ul class="thb-full-menu">
+                            <li>
+                                <asp:LinkButton ID="lborders" runat="server" Visible="false" PostBackUrl="~/Orders2.aspx">Order History<span class="float_count">
+                                    <asp:Label ID="lblordercount" runat="server" Text="0" Style="margin-left: 10px" CssClass="numberCircle"></asp:Label></span></asp:LinkButton>
+                                <asp:LinkButton ID="lbbusiness" runat="server" OnClick="lbbusiness_Click">Want To Start Business With Us ??</asp:LinkButton>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-has-children menu-item-277">
+
+                                <asp:ImageButton ID="btnprofileimg" runat="server" Height="45" Width="45" CssClass="menu-item menu-item-type-post_type menu-item-object-page " Style="border-radius: 25px" OnClick="btnprofileimg_Click" AlternateText="" />
+
+                                <ul class="sub-menu">
+                                    <li class="" style="padding: 0;"><a href="#">
+                                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Profile1.aspx">My Profile</asp:LinkButton></a></li>
+                                    <li class="" style="padding: 0;"><a href="#">
+                                        <asp:LinkButton ID="lborder" runat="server" PostBackUrl="~/Orders.aspx">Your Orders</asp:LinkButton></a></li>
+                                    <li class="" style="padding: 0;"><a href="#">
+                                        <asp:LinkButton ID="btnlogout" runat="server" OnClick="btnlogout_Click">Log Out</asp:LinkButton></a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="Cart.aspx" title="Cart">Cart <span class="float_count">
+                                    <asp:Label ID="lblcounter" runat="server" Text="0" Style="margin-left: 10px" CssClass="numberCircle" Visible="false"></asp:Label></span></a>
+                                <div class="vc_empty_space" style="width: 10px"><span class="vc_empty_space_inner"></span></div>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="lbsignin" runat="server" CssClass="menu-item menu-item-type-post_type menu-item-object-page menu-item-home" PostBackUrl="~/Userlogin.aspx">SignIn</asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </header>
+            <!-- End Header -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- End role["main"] -->
+
+            <div class="footer-container wpb_row fp-auto-height" id="fp-footer">
+                <footer class="footer style1">
+                    <div class="row full-width-row">
+                        <div class="small-12 medium-6 columns footer-left-side">
+                            <ul id="menu-footer" class="thb-footer-menu">
+                                <li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-319"><a href="../index.html">Home</a></li>
+                                <li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="../shop/index.html">Shop</a></li>
+                                <li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="Insta.aspx">Post</a></li>
+                                <li id="menu-item-208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"><a href="Inquiry.aspx">Contact Us</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208">
+                                    <asp:TextBox ID="txtsubscribe" runat="server" Width="100%" Height="100%" Visible="true"></asp:TextBox></li>
+                                <li id="menu-item-208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208">
+                                    <asp:Button ID="btnsub" runat="server" Text="Subscribe Us" style="height:40%" OnClick="btnsub_Click" Visible="true" /></li>
+                            </ul>
+                            <div class="thb-footer-copyright">
+                                <p>© 2018 Petvy. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="small-12 medium-6 columns footer-right-side">
+                            <div class="footer-social-icons">
+                                <a href="#" class="social facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="social instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="social youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+                            </div>
+                            <div class="footer-payment-icons">
+                                <figure class="paymenttypes payment_visa"></figure>
+                                <figure class="paymenttypes payment_mc"></figure>
+                                <figure class="paymenttypes payment_pp"></figure>
+                                <figure class="paymenttypes payment_stripe"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+        <!-- End #wrapper -->
+        <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>
+        <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js?ver=2.1.4'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var woocommerce_params = { "ajax_url": "\/north-snap\/wp-admin\/admin-ajax.php", "wc_ajax_url": "http:\/\/newnorth.fuelthemes.net\/north-snap\/?wc-ajax=%%endpoint%%" };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.minc169.js?ver=3.2.6'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var wc_cart_fragments_params = { "ajax_url": "\/north-snap\/wp-admin\/admin-ajax.php", "wc_ajax_url": "http:\/\/newnorth.fuelthemes.net\/north-snap\/?wc-ajax=%%endpoint%%", "fragment_name": "wc_fragments_b515ef3488cf1a665945fc3bdee44848" };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.minc169.js?ver=3.2.6'></script>
+        <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min005e.js?ver=3.1.6'></script>
+        <script type='text/javascript' src='wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min7359.js?ver=1.2.0'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var yith_wcwl_l10n = { "ajax_url": "\/north-snap\/wp-admin\/admin-ajax.php", "redirect_to_cart": "no", "multi_wishlist": "", "hide_add_button": "1", "is_user_logged_in": "", "ajax_loader_url": "http:\/\/newnorth.fuelthemes.net\/north-snap\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader.gif", "remove_from_wishlist_after_add_to_cart": "yes", "labels": { "cookie_disabled": "We are sorry, but this feature is available only if cookies are enabled on your browser.", "added_to_cart_message": "<div class=\"woocommerce-message\">Product correctly added to cart<\/div>" }, "actions": { "add_to_wishlist_action": "add_to_wishlist", "remove_from_wishlist_action": "remove_from_wishlist", "move_to_another_wishlist_action": "move_to_another_wishlsit", "reload_wishlist_and_adding_elem_action": "reload_wishlist_and_adding_elem" } };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl3601.js?ver=2.2.0'></script>
+        <script type='text/javascript' src='wp-content/themes/north-wp/assets/js/vendor.mina871.js?ver=4.0.8'></script>
+        <script type='text/javascript' src='wp-includes/js/underscore.min4511.js?ver=1.8.3'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var themeajax = { "url": "http:\/\/newnorth.fuelthemes.net\/north-snap\/wp-admin\/admin-ajax.php", "l10n": { "loadmore": "Load More", "loading": "Loading ...", "nomore": "All Posts Loaded", "nomore_products": "All Products Loaded", "results_found": "results found." }, "settings": { "shop_product_listing_pagination": "style1", "posts_per_page": "9", "newsletter": "http:\/\/newnorth.fuelthemes.net\/north-snap\/wp-content\/themes\/north-wp\/inc\/subscribe_save.php", "newsletter_length": 86400, "cookie_path": "\/", "is_cart": false, "is_checkout": false }, "icons": { "close": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" version=\"1.1\" x=\"0\" y=\"0\" width=\"12\" height=\"12\" viewBox=\"1.1 1.1 12 12\" enable-background=\"new 1.1 1.1 12 12\" xml:space=\"preserve\"><path d=\"M8.3 7.1l4.6-4.6c0.3-0.3 0.3-0.8 0-1.2 -0.3-0.3-0.8-0.3-1.2 0L7.1 5.9 2.5 1.3c-0.3-0.3-0.8-0.3-1.2 0 -0.3 0.3-0.3 0.8 0 1.2L5.9 7.1l-4.6 4.6c-0.3 0.3-0.3 0.8 0 1.2s0.8 0.3 1.2 0L7.1 8.3l4.6 4.6c0.3 0.3 0.8 0.3 1.2 0 0.3-0.3 0.3-0.8 0-1.2L8.3 7.1z\"\/><\/svg>" } };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='wp-content/themes/north-wp/assets/js/app.mina871.js?ver=4.0.8'></script>
+        <script type='text/javascript' src='wp-includes/js/wp-embed.mincbf4.js?ver=4.9.4'></script>
+        <script type='text/javascript' src='wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min7752.js?ver=5.2.1'></script>
+
+    </form>
+</body>
+</html>

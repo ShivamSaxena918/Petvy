@@ -1,0 +1,313 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+    <title>Petvy</title>
+    <!-- Favicons-->
+    <link rel="icon" href="../LOGO/apple-icon-152x152.png" sizes="32x32">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon-precomposed" href="../LOGO/apple-icon-152x152.png">
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#00bcd4">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.html">
+    <!-- For Windows Phone -->
+    <!-- CORE CSS-->
+    <link href="css/themes/collapsible-menu/materialize.css" type="text/css" rel="stylesheet">
+    <link href="css/themes/collapsible-menu/style.css" type="text/css" rel="stylesheet">
+    <!-- Custome CSS-->
+    <link href="css/custom/custom.css" type="text/css" rel="stylesheet">
+    <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+    <link href="vendors/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet">
+    <link href="vendors/flag-icon/css/flag-icon.min.css" type="text/css" rel="stylesheet">
+    <link href="vendors/prism/prism.css" type="text/css" rel="stylesheet">
+    <link href="vendors/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet">
+    <link href="vendors/magnific-popup/magnific-popup.css" type="text/css" rel="stylesheet">
+    <link href="vendors/jquery-ui.css" rel="stylesheet" />
+    <!--<link href="bootstrap/bootstrap.css" rel="stylesheet" />-->
+</head>
+<body>
+
+    <!-- Start Page Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- End Page Loading -->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- START HEADER -->
+    <form runat="server">
+        <header id="header" class="page-topbar">
+            <!-- start header nav-->
+            <div class="navbar-fixed">
+                <nav class="navbar-color gradient-45deg-purple-deep-orange gradient-shadow">
+                    <div class="nav-wrapper">
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen">
+                                    <i class="material-icons">settings_overscan</i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect waves-block waves-light profile-button" data-activates="profile-dropdown">
+                                    <span class="avatar-status avatar-online">
+                                        <asp:Image ID="Imageavatar" runat="server" />
+                                        <%--<img src="images/avatar/avatar-7.png" alt="avatar">--%>
+                                        <i></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- profile-dropdown -->
+                        <ul id="profile-dropdown" class="dropdown-content">
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="grey-text text-darken-1" OnClick="LinkButton1_Click"><i class="material-icons">face</i> Profile</asp:LinkButton>
+
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <asp:LinkButton ID="btnlogout" runat="server" CssClass="grey-text text-darken-1" OnClick="btnlogout_Click" Style="margin-right: 50px"><i class="material-icons">keyboard_tab</i> Logout</asp:LinkButton>
+                                <%-- <a href="#" class="grey-text text-darken-1">
+                                    <i class="material-icons">keyboard_tab</i> Logout</a>--%>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- END HEADER -->
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- START MAIN -->
+        <div id="main">
+            <!-- START WRAPPER -->
+            <div class="wrapper">
+                <!-- START LEFT SIDEBAR NAV-->
+                <aside id="left-sidebar-nav" class="nav-expanded nav-lock nav-collapsible">
+                    <div class="brand-sidebar">
+                        <h1 class="logo-wrapper">
+                            <a href="#" class="brand-logo darken-1">
+                                <span class="logo-text hide-on-med-and-down">Petvy</span>
+                            </a>
+                            <a href="#" class="navbar-toggler">
+                                <i class="material-icons">radio_button_checked</i>
+                            </a>
+                        </h1>
+                    </div>
+                    <ul id="slide-out" class="side-nav fixed leftside-navigation">
+                        <li class="no-padding">
+                            <ul class="collapsible" data-collapsible="accordion">
+
+                                <li class="active">
+                                    <a href="Dashboard.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="AdminDetails.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Admin</span>
+                                    </a>
+                                </li>
+
+                                <li class="bold">
+                                    <a class="collapsible-header waves-effect waves-cyan">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Registered Users</span>
+                                    </a>
+                                    <div class="collapsible-body">
+                                        <ul>
+                                            <li>
+                                                <a href="User.aspx">
+                                                    <i class="material-icons">keyboard_arrow_right</i>
+                                                    <span>User</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Seller.aspx">
+                                                    <i class="material-icons">keyboard_arrow_right</i>
+                                                    <span>Seller</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="Gallery.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Gallery</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Posts.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Posts</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Events.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Events</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Permission.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Permissions</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Products</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Categories.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Categories</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Inquiry.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Inquiry</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Pets.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Pets</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="Ratings.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Ratings</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="CMS.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>CMS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="NewsLetter.aspx">
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                        <span>Newsletter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only gradient-45deg-light-blue-cyan gradient-shadow">
+                                <i class="material-icons">menu</i>
+                            </a>
+                </aside>
+                <!-- END LEFT SIDEBAR NAV-->
+                <!-- //////////////////////////////////////////////////////////////////////////// -->
+                <!-- START CONTENT -->
+                <section id="content">
+                    <!--breadcrumbs start-->
+                    <div id="breadcrumbs-wrapper">
+                        <!-- Search for small screen -->
+                        <div class="header-search-wrapper grey lighten-2 hide-on-large-only">
+                            <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col s10 m6 l6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--breadcrumbs end-->
+                    <!--start container-->
+                    <div class="container" style="background-color: white; margin-bottom: 174px;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                    <!--end container-->
+                </section>
+
+                <!-- END CONTENT -->
+                <!-- //////////////////////////////////////////////////////////////////////////// -->
+            </div>
+            <!-- END WRAPPER -->
+        </div>
+        <!-- END MAIN -->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!-- START FOOTER -->
+    </form>
+    <footer class="page-footer gradient-45deg-purple-deep-orange">
+        <div class="footer-copyright">
+            <div class="container">
+                <span class="right hide-on-small-only">Design and Developed by Vivekanand College For BCA Sem-6</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
+    <!-- ================================================
+        Scripts
+  ================================================ -->
+    <script src="vendors/jquery-ui.js"></script>
+    <%--<script src="vendors/jquery.js"></script>--%>
+    <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
+    <!--materialize js-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--prism-->
+    <script type="text/javascript" src="vendors/prism/prism.js"></script>
+    <!--scrollbar-->
+    <script type="text/javascript" src="vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <!-- data-tables -->
+    <script type="text/javascript" src="vendors/data-tables/js/jquery.dataTables.min.js"></script>
+    <!--data-tables.js - Page Specific JS codes -->
+    <script type="text/javascript" src="js/scripts/data-tables.js"></script>
+    <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <!--advanced-ui-modals.js - Some Specific JS codes -->
+
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>
+    <!--angularjs-->
+    <script type="text/javascript" src="vendors/angular.min.js"></script>
+    <!--angular-materialize js-->
+    <script type="text/javascript" src="vendors/angular-materialize.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/scripts/angular-ui.js"></script>
+    <!--form-elements.js - Page Specific JS codes-->
+    <script type="text/javascript" src="js/scripts/form-elements.js"></script>
+
+    <script type="text/javascript" src="js/scripts/advanced-ui-modals.js"></script>
+    <script src="vendors/masonry.pkgd.min.js"></script>
+    <!-- imagesloaded -->
+    <script src="vendors/imagesloaded.pkgd.min.js"></script>
+    <!-- magnific-popup -->
+    <script type="text/javascript" src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!--media-gallary-page.js - Page specific JS-->
+    <script type="text/javascript" src="js/scripts/media-gallary-page.js"></script>
+
+</body>
+
+</html>
